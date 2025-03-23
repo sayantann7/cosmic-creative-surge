@@ -76,7 +76,8 @@ export default {
 			},
 			fontFamily: {
 				mono: ['Space Mono', 'monospace'],
-				sans: ['Inter', 'sans-serif'],
+				sans: ['Aileron', 'Inter', 'sans-serif'],
+				aileron: ['Aileron', 'sans-serif'],
 				display: ['Clash Display', 'sans-serif']
 			},
 			keyframes: {
