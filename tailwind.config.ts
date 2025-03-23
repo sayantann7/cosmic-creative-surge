@@ -1,4 +1,3 @@
-
 import type { Config } from "tailwindcss";
 
 export default {
@@ -17,6 +16,12 @@ export default {
 			screens: {
 				'2xl': '1400px'
 			}
+		},
+		fontFamily: {
+			sans: ['Aileron', 'sans-serif'],
+			aileron: ['Aileron', 'sans-serif'],
+			mono: ['Space Mono', 'monospace'],
+			display: ['Clash Display', 'sans-serif']
 		},
 		extend: {
 			colors: {
@@ -73,12 +78,6 @@ export default {
 				lg: 'var(--radius)',
 				md: 'calc(var(--radius) - 2px)',
 				sm: 'calc(var(--radius) - 4px)'
-			},
-			fontFamily: {
-				mono: ['Space Mono', 'monospace'],
-				sans: ['Aileron', 'Inter', 'sans-serif'],
-				aileron: ['Aileron', 'sans-serif'],
-				display: ['Clash Display', 'sans-serif']
 			},
 			keyframes: {
 				'accordion-down': {
