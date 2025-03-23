@@ -1,5 +1,4 @@
-
-import { useEffect, useRef } from 'react';
+import { useRef } from 'react';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import Navbar from '@/components/Navbar';
@@ -15,19 +14,6 @@ import { Button } from '@/components/ui/button';
 const Index = () => {
   const heroRef = useRef<HTMLDivElement>(null);
 
-  useEffect(() => {
-    // Parallax effect for hero section
-    const handleScroll = () => {
-      const scrollY = window.scrollY;
-      if (heroRef.current) {
-        heroRef.current.style.transform = `translateY(${scrollY * 0.5}px)`;
-      }
-    };
-
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
-
   return (
     <PageTransition>
       <div className="min-h-screen bg-adastra-black relative">
@@ -37,7 +23,7 @@ const Index = () => {
 
         {/* Hero Section */}
         <div className="relative overflow-hidden min-h-[100vh] flex items-center">
-          <div className="absolute inset-0 z-0" ref={heroRef}>
+          <div className="absolute inset-0 z-0">
             <div className="absolute inset-0 bg-gradient-to-b from-transparent to-adastra-black z-10"></div>
             <img 
               src="public/lovable-uploads/e194d5cc-139a-4580-b326-505965e9383e.png" 
