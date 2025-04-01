@@ -1,69 +1,42 @@
-# Welcome to your Lovable project
+# Ad Astra Media
 
-## Project info
+Ad Astra Media is a modern media platform designed to deliver high-quality content across various channels.
 
-**URL**: https://lovable.dev/projects/9f4c12cf-baf6-4bfd-9229-0d060bcbde8d
+## Overview
 
-## How can I edit this code?
+Ad Astra Media provides a streamlined solution for content creation, management, and distribution. Our platform is built with scalability and performance in mind.
 
-There are several ways of editing your application.
+## Features
 
-**Use Lovable**
+- **Content Management System**: Easily create, edit, and organize your media content
+- **Multi-platform Distribution**: Share content across various channels and platforms
+- **Analytics Dashboard**: Track performance and engagement metrics
+- **Responsive Design**: Optimized viewing experience across all devices
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/9f4c12cf-baf6-4bfd-9229-0d060bcbde8d) and start prompting.
+## Installation
 
-Changes made via Lovable will be committed automatically to this repo.
+```bash
+# Clone the repository
+git clone https://github.com/sayantann7/cosmic-creative-surge.git
 
-**Use your preferred IDE**
+# Navigate to the project directory
+cd cosmic-creative-surge
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+# Install dependencies
+npm install
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
-
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
+# Start the development server
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+## Contributing
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add some amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
 
-**Use GitHub Codespaces**
+## Contact
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with .
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/9f4c12cf-baf6-4bfd-9229-0d060bcbde8d) and click on Share -> Publish.
-
-## I want to use a custom domain - is that possible?
-
-We don't support custom domains (yet). If you want to deploy your project under your own domain then we recommend using Netlify. Visit our docs for more details: [Custom domains](https://docs.lovable.dev/tips-tricks/custom-domain/)
+Your Name - [@sayantann7](https://x.com/sayantann7) - officialsayantannandi@gmail.com
