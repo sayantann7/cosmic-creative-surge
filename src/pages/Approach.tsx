@@ -344,7 +344,7 @@ const Approach = () => {
         </section>
 
         {/* Testimonials Section */}
-        <section className="py-20 relative overflow-hidden">
+        {/* <section className="py-20 relative overflow-hidden">
           <div className="container mx-auto px-4 md:px-6">
             <FadeInUpSection>
               <div className="max-w-3xl mx-auto text-center mb-16">
@@ -357,7 +357,7 @@ const Approach = () => {
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               {/* Testimonial 1 */}
-              <FadeInUpSection delay={0.1}>
+              {/* <FadeInUpSection delay={0.1}>
                 <div className="bg-adastra-black/50 backdrop-blur-sm border border-adastra-red/20 rounded-lg p-6">
                   <div className="flex items-center mb-4">
                     <div className="w-12 h-12 bg-adastra-red/20 rounded-full flex items-center justify-center mr-4">
@@ -389,10 +389,10 @@ const Approach = () => {
                     </svg>
                   </div>
                 </div>
-              </FadeInUpSection>
+              </FadeInUpSection> */}
 
               {/* Testimonial 2 */}
-              <FadeInUpSection delay={0.2}>
+              {/* <FadeInUpSection delay={0.2}>
                 <div className="bg-adastra-black/50 backdrop-blur-sm border border-adastra-red/20 rounded-lg p-6">
                   <div className="flex items-center mb-4">
                     <div className="w-12 h-12 bg-adastra-red/20 rounded-full flex items-center justify-center mr-4">
@@ -425,9 +425,9 @@ const Approach = () => {
                   </div>
                 </div>
               </FadeInUpSection>
-            </div>
-          </div>
-        </section>
+            </div> 
+          </div> 
+        </section>*/}
 
         {/* CTA Section */}
         <section className="py-20 relative overflow-hidden bg-gradient-to-b from-adastra-black/90 to-adastra-black">
@@ -440,12 +440,12 @@ const Approach = () => {
                 </p>
                 <div className="flex flex-col sm:flex-row justify-center gap-4">
                   <Link to="/services">
-                    <Button className="bg-adastra-red hover:bg-adastra-red/90 text-white px-6 py-2 rounded-md transition-all duration-300 transform hover:scale-105">
+                    <Button variant="outline" className="border-adastra-red/10 hover:border-adastra-red/20 hover:text-adastra-light bg-adastra-red hover:bg-adastra-red/40 text-white px-6 py-2 rounded-md transition-all duration-300 transform hover:scale-105">
                       Explore Our Services
                     </Button>
                   </Link>
                   <Link to="/contact">
-                    <Button variant="outline" className="border-adastra-red text-adastra-red hover:bg-adastra-red/10 px-6 py-2 rounded-md transition-all duration-300 transform hover:scale-105">
+                    <Button variant="outline" className="border-adastra-red text-adastra-red hover:bg-adastra-red/10 px-6 py-2 rounded-md transition-all duration-300 transform hover:scale-105 hover:text-adastra-light">
                       Contact Mission Control
                     </Button>
                   </Link>

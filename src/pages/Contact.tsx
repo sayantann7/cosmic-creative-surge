@@ -116,7 +116,7 @@ const Contact = () => {
                         </div>
                         <div>
                           <h3 className="text-adastra-light font-display font-semibold text-xl">Email</h3>
-                          <p className="text-gray-400">email@adastramedia.com</p>
+                          <p className="text-gray-400">contactadastramedia@gmail.com</p>
                         </div>
                       </div>
                       
@@ -129,7 +129,7 @@ const Contact = () => {
                         </div>
                         <div>
                           <h3 className="text-adastra-light font-display font-semibold text-xl">Location</h3>
-                          <p className="text-gray-400">123 Cosmic Way, Digital Universe</p>
+                          <p className="text-gray-400">Digital Universe</p>
                         </div>
                       </div>
                       
@@ -143,7 +143,7 @@ const Contact = () => {
                         </div>
                         <div>
                           <h3 className="text-adastra-light font-display font-semibold text-xl">Website</h3>
-                          <p className="text-gray-400">www.ad-astra-media.com</p>
+                          <p className="text-gray-400">adastra-media.in</p>
                         </div>
                       </div>
                     </div>
