@@ -23,10 +23,9 @@ const Navbar = () => {
 
   const navLinks = [
     { name: 'Vision', path: '/vision' },
-    { name: 'Challenges', path: '/challenges' },
-    { name: 'Approach', path: '/approach' },
     { name: 'Services', path: '/services' },
-    { name: 'Contact', path: '/contact' },
+    { name: 'Approach', path: '/approach' },
+    { name: 'Challenges', path: '/challenges' },
   ];
 
   return (
@@ -118,7 +117,7 @@ const Navbar = () => {
                   className="bg-adastra-red text-white px-4 py-2 rounded text-center hover:bg-adastra-red/80 transition-colors duration-300"
                   onClick={() => setIsMobileMenuOpen(false)}
                 >
-                  Launch
+                  Contact
                 </Link>
               </nav>
             </div>
