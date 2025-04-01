@@ -62,7 +62,7 @@ const Navbar = () => {
               to="/contact" 
               className="bg-adastra-red text-white px-4 py-2 rounded hover:bg-adastra-red/40 transition-colors duration-300 hover:scale-105"
             >
-              Launch
+              Contact
             </Link>
           </nav>
 
