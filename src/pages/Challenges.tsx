@@ -8,8 +8,45 @@ import RevealText from '@/components/animations/RevealText';
 import FadeInUpSection from '@/components/animations/FadeInUpSection';
 import { Button } from '@/components/ui/button';
 import { Link } from 'react-router-dom';
+import { Card, CardContent } from '@/components/ui/card';
 
 const Challenges = () => {
+  // Array of challenges data
+  const challenges = [
+    {
+      id: "01",
+      title: "LOST IN THE NOISE OF CROWDED CHANNELS",
+      description: [
+        "The digital universe is expanding at an exponential rate, with millions of brands competing for attention. Many businesses struggle to stand out amidst the cosmic noise, their messages lost in the vastness of social media feeds, search results, and content platforms.",
+        "Without a distinctive voice and strategic visibility, even the most valuable offerings can remain undiscovered by potential customers navigating through the digital cosmos."
+      ]
+    },
+    {
+      id: "02",
+      title: "LOW ENGAGEMENT AND LIMITED REACH",
+      description: [
+        "Creating content is not enough—it needs to resonate, engage, and drive action. Many brands struggle with low engagement rates, minimal sharing, and limited organic reach, causing their digital presence to stagnate in a vast sea of content.",
+        "This challenge is often compounded by algorithm changes, shifting user behaviors, and increasing competition for attention spans, making it harder to build meaningful connections with target audiences."
+      ]
+    },
+    {
+      id: "03",
+      title: "BUDGET BLACK HOLES THAT DRAIN POTENTIAL",
+      description: [
+        "Digital marketing budgets can quickly disappear into black holes of inefficiency without proper strategy and tracking. Many businesses invest in platforms, campaigns, and content without clear ROI measures, leading to wasted resources and missed opportunities.",
+        "This challenge is particularly acute for small and medium businesses trying to compete with larger entities that have gravitational pull in the market due to their substantial resources."
+      ]
+    },
+    {
+      id: "04",
+      title: "INCONSISTENT BRAND MESSAGING",
+      description: [
+        "In a multi-platform universe, maintaining consistent brand voice, visuals, and messaging across all touchpoints becomes increasingly complex. Many businesses struggle with fragmented communications that confuse customers and dilute brand recognition.",
+        "This inconsistency can create a disjointed customer experience, undermining trust and preventing the formation of strong brand gravity that naturally attracts and retains customers in orbit."
+      ]
+    }
+  ];
+
   return (
     <PageTransition>
       <div className="min-h-screen bg-adastra-black relative">
@@ -39,126 +76,26 @@ const Challenges = () => {
         {/* Main Challenges Section */}
         <section className="py-20 relative overflow-hidden">
           <div className="container mx-auto px-4 md:px-6">
-            <div className="max-w-4xl mx-auto space-y-20">
-              {/* Challenge 1 */}
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
-                <FadeInUpSection>
-                  <img 
-                    src="public/lovable-uploads/78d8fbb1-1498-4700-9456-fc4ec588226a.png" 
-                    alt="Crowded Digital Space" 
-                    className="w-full h-auto rounded-lg shadow-xl"
-                  />
-                </FadeInUpSection>
-                
-                <FadeInUpSection delay={0.2}>
-                  <div>
-                    <div className="flex items-center space-x-4 mb-4">
-                      <span className="text-adastra-red font-display font-bold text-4xl">01</span>
-                      <div className="bg-adastra-red px-4 py-2">
-                        <h3 className="text-adastra-black font-display font-bold">LOST IN THE NOISE OF CROWDED CHANNELS</h3>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
+              {challenges.map((challenge) => (
+                <FadeInUpSection key={challenge.id} delay={0.1}>
+                  <Card className="bg-adastra-black/50 backdrop-blur-sm border border-adastra-red/20 h-full">
+                    <CardContent className="p-6">
+                      <div className="flex items-center space-x-4 mb-4">
+                        <span className="text-adastra-red font-display font-bold text-4xl">{challenge.id}</span>
+                        <div className="bg-adastra-red px-4 py-2">
+                          <h3 className="text-adastra-black font-display font-bold text-sm md:text-base">{challenge.title}</h3>
+                        </div>
                       </div>
-                    </div>
-                    <div className="space-y-4 text-gray-300">
-                      <p>
-                        The digital universe is expanding at an exponential rate, with millions of brands competing for attention. Many businesses struggle to stand out amidst the cosmic noise, their messages lost in the vastness of social media feeds, search results, and content platforms.
-                      </p>
-                      <p>
-                        Without a distinctive voice and strategic visibility, even the most valuable offerings can remain undiscovered by potential customers navigating through the digital cosmos.
-                      </p>
-                    </div>
-                  </div>
-                </FadeInUpSection>
-              </div>
-
-              {/* Challenge 2 */}
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
-                <FadeInUpSection className="order-2 md:order-1">
-                  <div>
-                    <div className="flex items-center space-x-4 mb-4">
-                      <span className="text-adastra-red font-display font-bold text-4xl">02</span>
-                      <div className="bg-adastra-red px-4 py-2">
-                        <h3 className="text-adastra-black font-display font-bold">LOW ENGAGEMENT AND LIMITED REACH</h3>
+                      <div className="space-y-4 text-gray-300">
+                        {challenge.description.map((paragraph, idx) => (
+                          <p key={idx}>{paragraph}</p>
+                        ))}
                       </div>
-                    </div>
-                    <div className="space-y-4 text-gray-300">
-                      <p>
-                        Creating content is not enough—it needs to resonate, engage, and drive action. Many brands struggle with low engagement rates, minimal sharing, and limited organic reach, causing their digital presence to stagnate in a vast sea of content.
-                      </p>
-                      <p>
-                        This challenge is often compounded by algorithm changes, shifting user behaviors, and increasing competition for attention spans, making it harder to build meaningful connections with target audiences.
-                      </p>
-                    </div>
-                  </div>
+                    </CardContent>
+                  </Card>
                 </FadeInUpSection>
-
-                <FadeInUpSection delay={0.2} className="order-1 md:order-2">
-                  <img 
-                    src="public/lovable-uploads/bb69b9cd-34ef-4dc8-a753-cadd0512b4cb.png" 
-                    alt="Digital Engagement" 
-                    className="w-full h-auto rounded-lg shadow-xl"
-                  />
-                </FadeInUpSection>
-              </div>
-
-              {/* Challenge 3 */}
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
-                <FadeInUpSection>
-                  <img 
-                    src="public/lovable-uploads/cbe5e7e5-e7fd-4958-87f6-717a12087174.png" 
-                    alt="Budget Challenge" 
-                    className="w-full h-auto rounded-lg shadow-xl"
-                  />
-                </FadeInUpSection>
-                
-                <FadeInUpSection delay={0.2}>
-                  <div>
-                    <div className="flex items-center space-x-4 mb-4">
-                      <span className="text-adastra-red font-display font-bold text-4xl">03</span>
-                      <div className="bg-adastra-red px-4 py-2">
-                        <h3 className="text-adastra-black font-display font-bold">BUDGET BLACK HOLES THAT DRAIN POTENTIAL</h3>
-                      </div>
-                    </div>
-                    <div className="space-y-4 text-gray-300">
-                      <p>
-                        Digital marketing budgets can quickly disappear into black holes of inefficiency without proper strategy and tracking. Many businesses invest in platforms, campaigns, and content without clear ROI measures, leading to wasted resources and missed opportunities.
-                      </p>
-                      <p>
-                        This challenge is particularly acute for small and medium businesses trying to compete with larger entities that have gravitational pull in the market due to their substantial resources.
-                      </p>
-                    </div>
-                  </div>
-                </FadeInUpSection>
-              </div>
-
-              {/* Challenge 4 */}
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
-                <FadeInUpSection className="order-2 md:order-1">
-                  <div>
-                    <div className="flex items-center space-x-4 mb-4">
-                      <span className="text-adastra-red font-display font-bold text-4xl">04</span>
-                      <div className="bg-adastra-red px-4 py-2">
-                        <h3 className="text-adastra-black font-display font-bold">INCONSISTENT BRAND MESSAGING</h3>
-                      </div>
-                    </div>
-                    <div className="space-y-4 text-gray-300">
-                      <p>
-                        In a multi-platform universe, maintaining consistent brand voice, visuals, and messaging across all touchpoints becomes increasingly complex. Many businesses struggle with fragmented communications that confuse customers and dilute brand recognition.
-                      </p>
-                      <p>
-                        This inconsistency can create a disjointed customer experience, undermining trust and preventing the formation of strong brand gravity that naturally attracts and retains customers in orbit.
-                      </p>
-                    </div>
-                  </div>
-                </FadeInUpSection>
-
-                <FadeInUpSection delay={0.2} className="order-1 md:order-2">
-                  <img 
-                    src="public/lovable-uploads/4ef19db3-129a-40ba-93b1-0a62dccbfb17.png" 
-                    alt="Brand Consistency" 
-                    className="w-full h-auto rounded-lg shadow-xl"
-                  />
-                </FadeInUpSection>
-              </div>
+              ))}
             </div>
           </div>
         </section>
