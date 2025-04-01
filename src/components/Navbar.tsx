@@ -39,7 +39,8 @@ const Navbar = () => {
       <div className="container mx-auto px-4 md:px-6">
         <div className="flex items-center justify-between">
           <Link to="/" className="flex items-center space-x-2">
-            <span className="text-adastra-red font-display text-2xl font-bold">
+            <img src="/logo.png" alt="AdAstra Logo" className="h-12 w-12 pr-0"/>
+            <span className="text-adastra-red font-display text-2xl font-bold pl-0">
               AdAstra
             </span>
             <span className="text-adastra-light font-display text-2xl font-bold">
@@ -60,7 +61,7 @@ const Navbar = () => {
             ))}
             <Link 
               to="/contact" 
-              className="bg-adastra-red text-white px-4 py-2 rounded hover:bg-adastra-red/80 transition-colors duration-300"
+              className="bg-adastra-red text-white px-4 py-2 rounded hover:bg-adastra-red/40 transition-colors duration-300 hover:scale-105"
             >
               Launch
             </Link>

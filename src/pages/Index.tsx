@@ -1,5 +1,5 @@
-import { useRef } from 'react';
-import { motion } from 'framer-motion';
+import { useRef, useState, useEffect } from 'react';
+import { motion, AnimatePresence } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
@@ -10,8 +10,10 @@ import FadeInUpSection from '@/components/animations/FadeInUpSection';
 import StaggeredText from '@/components/animations/StaggeredText';
 import OrbitingSphere from '@/components/3d/OrbitingSphere';
 import { Button } from '@/components/ui/button';
+import { TextEffect } from '@/components/motion-primitives/text-effect';
 
 const Index = () => {
+  
   const heroRef = useRef<HTMLDivElement>(null);
 
   return (
@@ -26,9 +28,9 @@ const Index = () => {
           <div className="absolute inset-0 z-0">
             <div className="absolute inset-0 bg-gradient-to-b from-transparent to-adastra-black z-10"></div>
             <img 
-              src="public/lovable-uploads/e194d5cc-139a-4580-b326-505965e9383e.png" 
-              alt="Space Background" 
-              className="w-full h-full object-cover opacity-40"
+              src="public/hero-bg.png" 
+              alt="" 
+              className="w-full h-full object-cover opacity-75"
             />
           </div>
 
@@ -43,25 +45,19 @@ const Index = () => {
                   delay: 0.2
                 }}
               >
-                <h1 className="text-adastra-red font-display text-6xl md:text-8xl font-bold mb-4">
-                  AdAstra <span className="text-adastra-light">Media</span>
-                </h1>
+                <motion.h1 className="text-adastra-red font-display text-6xl md:text-8xl font-bold mb-4">
+                  AdAstra <motion.span className="text-adastra-light">Media</motion.span>
+                </motion.h1>
               </motion.div>
               
               <RevealText delay={0.4}>
                 <div className="flex justify-center items-center space-x-4 mb-8">
-                  <span className="text-adastra-light text-xl md:text-2xl">ELEVATING BRANDS</span>
-                  <img 
-                    src="public/lovable-uploads/ab7fc5ac-cb32-4daa-9a3f-11e23b8aad75.png" 
-                    alt="Star icon" 
-                    className="w-6 h-6 animate-pulse"
-                  />
-                  <span className="text-adastra-light text-xl md:text-2xl">TO THE STARS</span>
+                  <span className="text-adastra-light text-xl md:text-2xl">ELEVATING BRANDS TO THE STARS</span>
                 </div>
               </RevealText>
               
               <RevealText delay={0.6}>
-                <p className="text-gray-400 text-lg md:text-xl mb-10">
+                <p className="text-gray-300 text-lg md:text-xl mb-10">
                   We are not just another digital partner—we are your ticket to an extraordinary future.
                 </p>
               </RevealText>
@@ -69,12 +65,13 @@ const Index = () => {
               <RevealText delay={0.8}>
                 <div className="flex flex-col sm:flex-row justify-center gap-4">
                   <Link to="/vision">
-                    <Button className="bg-adastra-red hover:bg-adastra-red/90 text-white px-8 py-6 rounded-md text-lg transition-all duration-300 transform hover:scale-105">
+                    <Button variant="outline" className="border-adastra-red bg-adastra-red hover:bg-adastra-red/10 text-white px-8 py-6 rounded-md text-lg transition-all duration-300 hover:border-adastra-red transform hover:scale-105 hover:text-white">
                       Explore Our Vision
                     </Button>
-                  </Link>
+                    </Link>
+                    {/* <CardTilt url="/vision" title="Explore Our Vision" /> */}
                   <Link to="/contact">
-                    <Button variant="outline" className="border-adastra-red text-adastra-red hover:bg-adastra-red/10 px-8 py-6 rounded-md text-lg transition-all duration-300 transform hover:scale-105">
+                    <Button variant="outline" className="border-adastra-red text-adastra-red hover:bg-adastra-red/10 px-8 py-6 rounded-md text-lg transition-all duration-300 transform hover:scale-105 hover:text-white">
                       Contact Mission Control
                     </Button>
                   </Link>
