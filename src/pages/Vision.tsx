@@ -43,7 +43,7 @@ const Vision = () => {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
               <FadeInUpSection>
                 <img 
-                  src="public/lovable-uploads/4648ee99-9729-4c2c-bf81-0dd0522f1fbc.png" 
+                  src="/lovable-uploads/4648ee99-9729-4c2c-bf81-0dd0522f1fbc.png" 
                   alt="Space Nebula" 
                   className="w-full h-auto rounded-lg shadow-xl"
                 />
