@@ -28,7 +28,7 @@ const Index = () => {
           <div className="absolute inset-0 z-0">
             <div className="absolute inset-0 bg-gradient-to-b from-transparent to-adastra-black z-10"></div>
             <img 
-              src="public/hero-bg.png" 
+              src="/hero-bg.png" 
               alt="" 
               className="w-full h-full object-cover opacity-75"
             />
