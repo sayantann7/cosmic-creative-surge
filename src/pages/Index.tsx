@@ -484,9 +484,9 @@ const Index = () => {
         {/* Approach Section */}
         <section className="py-20 relative overflow-hidden">
           <div className="container mx-auto px-4 md:px-6">
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+            <div className="grid grid-cols-1 lg:grid-cols-1 gap-16 items-center">
               <FadeInUpSection>
-                <div className="max-w-xl">
+                <div className="max-w-xl mx-auto">
                   <div className="inline-block py-1 px-3 bg-adastra-red/10 text-adastra-red rounded-full text-sm font-medium mb-4">OUR INTERSTELLAR APPROACH</div>
                   <h2 className="section-title mb-6">FUELING YOUR BRAND'S ROCKET</h2>
                   <div className="space-y-4 text-gray-300">
@@ -507,17 +507,6 @@ const Index = () => {
                       </Button>
                     </Link>
                   </div>
-                </div>
-              </FadeInUpSection>
-              
-              <FadeInUpSection delay={0.2}>
-                <div className="relative">
-                  <img 
-                    src="public/lovable-uploads/e988da9b-014d-4f29-81a3-66178402e879.png" 
-                    alt="Cosmic Approach" 
-                    className="w-full h-auto rounded-lg shadow-xl"
-                  />
-                  <div className="absolute -inset-0.5 bg-adastra-red/20 rounded-lg blur-md z-[-1]"></div>
                 </div>
               </FadeInUpSection>
             </div>

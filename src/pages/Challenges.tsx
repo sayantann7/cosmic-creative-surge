@@ -114,7 +114,7 @@ const Challenges = () => {
 
             <FadeInUpSection delay={0.2}>
               <div className="max-w-4xl mx-auto bg-adastra-black/50 backdrop-blur-sm border border-adastra-red/20 rounded-lg p-8">
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+                <div className="grid grid-cols-1 md:grid-cols-1 gap-8 items-center">
                   <div>
                     <h3 className="text-adastra-light text-2xl font-display font-bold mb-4">Our Interstellar Approach</h3>
                     <p className="text-gray-300 mb-6">
@@ -125,14 +125,6 @@ const Challenges = () => {
                         Discover Our Approach
                       </Button>
                     </Link>
-                  </div>
-                  <div className="relative">
-                    <img 
-                      src="public/lovable-uploads/7eb81545-c2cb-4495-89d7-bdd42bc39330.png" 
-                      alt="Space Explorer" 
-                      className="w-full h-auto rounded-lg"
-                    />
-                    <div className="absolute -inset-0.5 bg-adastra-red/10 rounded-lg blur-md z-[-1]"></div>
                   </div>
                 </div>
               </div>
