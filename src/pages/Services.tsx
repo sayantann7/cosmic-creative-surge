@@ -52,14 +52,16 @@ const Services = () => {
           </div>
         </section>
 
-        {/* Strategic Consulting */}
+        {/* Services Grid */}
         <section className="py-20 relative overflow-hidden">
           <div className="container mx-auto px-4 md:px-6">
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
+              
+              {/* Service 01 - Strategic Consulting */}
               <FadeInUpSection>
-                <div className="max-w-xl">
+                <div className="bg-adastra-black/50 backdrop-blur-sm border border-adastra-red/20 rounded-lg p-8 hover:border-adastra-red/40 transition-all duration-300 h-full">
                   <div className="inline-block py-1 px-3 bg-adastra-red/10 text-adastra-red rounded-full text-sm font-medium mb-4">SERVICE 01</div>
-                  <h2 className="text-4xl md:text-5xl font-display font-bold text-adastra-light mb-6">
+                  <h2 className="text-3xl md:text-4xl font-display font-bold text-adastra-light mb-6">
                     Strategic Consulting
                   </h2>
                   <div className="space-y-4 text-gray-300">
@@ -102,39 +104,11 @@ const Services = () => {
                 </div>
               </FadeInUpSection>
               
-              <FadeInUpSection delay={0.2}>
-                <div className="relative">
-                  <img 
-                    src="public/lovable-uploads/06126218-95fc-4246-b7d5-8c85e32cc1bc.png" 
-                    alt="Strategic Consulting" 
-                    className="w-full h-auto rounded-lg shadow-xl"
-                  />
-                  <div className="absolute -inset-0.5 bg-adastra-red/10 rounded-lg blur-md z-[-1]"></div>
-                </div>
-              </FadeInUpSection>
-            </div>
-          </div>
-        </section>
-
-        {/* Creative Design */}
-        <section className="py-20 relative overflow-hidden bg-gradient-to-b from-adastra-black to-adastra-black/90">
-          <div className="container mx-auto px-4 md:px-6">
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-              <FadeInUpSection className="order-2 lg:order-1">
-                <div className="relative">
-                  <img 
-                    src="public/lovable-uploads/e988da9b-014d-4f29-81a3-66178402e879.png" 
-                    alt="Creative Design" 
-                    className="w-full h-auto rounded-lg shadow-xl"
-                  />
-                  <div className="absolute -inset-0.5 bg-adastra-red/10 rounded-lg blur-md z-[-1]"></div>
-                </div>
-              </FadeInUpSection>
-              
-              <FadeInUpSection delay={0.2} className="order-1 lg:order-2">
-                <div className="max-w-xl">
+              {/* Service 02 - Creative Design */}
+              <FadeInUpSection delay={0.1}>
+                <div className="bg-adastra-black/50 backdrop-blur-sm border border-adastra-red/20 rounded-lg p-8 hover:border-adastra-red/40 transition-all duration-300 h-full">
                   <div className="inline-block py-1 px-3 bg-adastra-red/10 text-adastra-red rounded-full text-sm font-medium mb-4">SERVICE 02</div>
-                  <h2 className="text-4xl md:text-5xl font-display font-bold text-adastra-light mb-6">
+                  <h2 className="text-3xl md:text-4xl font-display font-bold text-adastra-light mb-6">
                     Creative Design
                   </h2>
                   <div className="space-y-4 text-gray-300">
@@ -176,18 +150,12 @@ const Services = () => {
                   </div>
                 </div>
               </FadeInUpSection>
-            </div>
-          </div>
-        </section>
 
-        {/* Web Development */}
-        <section className="py-20 relative overflow-hidden">
-          <div className="container mx-auto px-4 md:px-6">
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-              <FadeInUpSection>
-                <div className="max-w-xl">
+              {/* Service 03 - Web Development */}
+              <FadeInUpSection delay={0.2}>
+                <div className="bg-adastra-black/50 backdrop-blur-sm border border-adastra-red/20 rounded-lg p-8 hover:border-adastra-red/40 transition-all duration-300 h-full">
                   <div className="inline-block py-1 px-3 bg-adastra-red/10 text-adastra-red rounded-full text-sm font-medium mb-4">SERVICE 03</div>
-                  <h2 className="text-4xl md:text-5xl font-display font-bold text-adastra-light mb-6">
+                  <h2 className="text-3xl md:text-4xl font-display font-bold text-adastra-light mb-6">
                     Web Development
                   </h2>
                   <div className="space-y-4 text-gray-300">
@@ -229,40 +197,12 @@ const Services = () => {
                   </div>
                 </div>
               </FadeInUpSection>
-              
-              <FadeInUpSection delay={0.2}>
-                <div className="relative">
-                  <img 
-                    src="public/lovable-uploads/78d8fbb1-1498-4700-9456-fc4ec588226a.png" 
-                    alt="Web Development" 
-                    className="w-full h-auto rounded-lg shadow-xl"
-                  />
-                  <div className="absolute -inset-0.5 bg-adastra-red/10 rounded-lg blur-md z-[-1]"></div>
-                </div>
-              </FadeInUpSection>
-            </div>
-          </div>
-        </section>
 
-        {/* Digital Marketing */}
-        <section className="py-20 relative overflow-hidden bg-gradient-to-b from-adastra-black/90 to-adastra-black">
-          <div className="container mx-auto px-4 md:px-6">
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-              <FadeInUpSection className="order-2 lg:order-1">
-                <div className="relative">
-                  <img 
-                    src="public/lovable-uploads/4ef19db3-129a-40ba-93b1-0a62dccbfb17.png" 
-                    alt="Digital Marketing" 
-                    className="w-full h-auto rounded-lg shadow-xl"
-                  />
-                  <div className="absolute -inset-0.5 bg-adastra-red/10 rounded-lg blur-md z-[-1]"></div>
-                </div>
-              </FadeInUpSection>
-              
-              <FadeInUpSection delay={0.2} className="order-1 lg:order-2">
-                <div className="max-w-xl">
+              {/* Service 04 - Digital Marketing */}
+              <FadeInUpSection delay={0.3}>
+                <div className="bg-adastra-black/50 backdrop-blur-sm border border-adastra-red/20 rounded-lg p-8 hover:border-adastra-red/40 transition-all duration-300 h-full">
                   <div className="inline-block py-1 px-3 bg-adastra-red/10 text-adastra-red rounded-full text-sm font-medium mb-4">SERVICE 04</div>
-                  <h2 className="text-4xl md:text-5xl font-display font-bold text-adastra-light mb-6">
+                  <h2 className="text-3xl md:text-4xl font-display font-bold text-adastra-light mb-6">
                     Digital Marketing
                   </h2>
                   <div className="space-y-4 text-gray-300">
@@ -304,18 +244,12 @@ const Services = () => {
                   </div>
                 </div>
               </FadeInUpSection>
-            </div>
-          </div>
-        </section>
 
-        {/* SEO & Analytics */}
-        <section className="py-20 relative overflow-hidden">
-          <div className="container mx-auto px-4 md:px-6">
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-              <FadeInUpSection>
-                <div className="max-w-xl">
+              {/* Service 05 - SEO & Analytics */}
+              <FadeInUpSection delay={0.4}>
+                <div className="bg-adastra-black/50 backdrop-blur-sm border border-adastra-red/20 rounded-lg p-8 hover:border-adastra-red/40 transition-all duration-300 h-full">
                   <div className="inline-block py-1 px-3 bg-adastra-red/10 text-adastra-red rounded-full text-sm font-medium mb-4">SERVICE 05</div>
-                  <h2 className="text-4xl md:text-5xl font-display font-bold text-adastra-light mb-6">
+                  <h2 className="text-3xl md:text-4xl font-display font-bold text-adastra-light mb-6">
                     SEO & Analytics
                   </h2>
                   <div className="space-y-4 text-gray-300">
@@ -355,17 +289,6 @@ const Services = () => {
                       </li>
                     </ul>
                   </div>
-                </div>
-              </FadeInUpSection>
-              
-              <FadeInUpSection delay={0.2}>
-                <div className="relative">
-                  <img 
-                    src="public/lovable-uploads/7eb81545-c2cb-4495-89d7-bdd42bc39330.png" 
-                    alt="SEO & Analytics" 
-                    className="w-full h-auto rounded-lg shadow-xl"
-                  />
-                  <div className="absolute -inset-0.5 bg-adastra-red/10 rounded-lg blur-md z-[-1]"></div>
                 </div>
               </FadeInUpSection>
             </div>
