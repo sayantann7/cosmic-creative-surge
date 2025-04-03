@@ -48,11 +48,11 @@ const Index = () => {
                   delay: 0.2
                 }}
               >
-                <motion.h1 className="text-adastra-red font-display text-6xl md:text-8xl font-bold mb-4">
                 {/* <span className='inline-flex animate-background-shine bg-[linear-gradient(110deg,#e02b11,45%,#350904,55%,#e02b11)] bg-[length:250%_100%] bg-clip-text text-12xl text-transparent'>
-      AdAstra</span> */}AdAstra 
-      <motion.span className="text-adastra-light">Media</motion.span>
-                </motion.h1>
+      AdAstra</span> */} 
+                <motion.h1 className="text-adastra-red font-display text-6xl md:text-8xl font-bold mb-4">
+                   AdAstra <motion.span className="text-adastra-light">Media</motion.span>
+                 </motion.h1>
               </motion.div>
               
               <RevealText delay={0.4}>
