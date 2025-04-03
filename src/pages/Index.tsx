@@ -27,11 +27,14 @@ const Index = () => {
         <div className="relative overflow-hidden min-h-[100vh] flex items-center">
           <div className="absolute inset-0 z-0">
             <div className="absolute inset-0 bg-gradient-to-b from-transparent to-adastra-black z-10"></div>
-            <img 
-              src="/hero-bg.png" 
-              alt="" 
-              className="w-full h-full object-cover opacity-75"
-            />
+              <video 
+                autoPlay 
+                muted
+                loop
+                playsInline
+                src="/bg-video.mp4"
+                className="w-full h-full object-cover opacity-50"
+              />
           </div>
 
           <div className="container mx-auto px-4 md:px-6 relative z-10 pt-20">
@@ -66,9 +69,9 @@ const Index = () => {
 
               <RevealText delay={0.8}>
                 <div className="flex flex-col sm:flex-row justify-center gap-4">
-                  <Link to="/vision">
+                  <Link to="/services">
                     <Button variant="outline" className="border-adastra-red bg-adastra-red hover:bg-adastra-red/10 text-white px-8 py-6 rounded-md text-lg transition-all duration-300 hover:border-adastra-red transform hover:scale-105 hover:text-white">
-                      Explore Our Vision
+                      Explore Our Services
                     </Button>
                     </Link>
                     {/* <CardTilt url="/vision" title="Explore Our Vision" /> */}
