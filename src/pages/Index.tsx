@@ -33,7 +33,7 @@ const Index = () => {
                 loop
                 playsInline
                 src="/bg-video.mp4"
-                className="w-full h-full object-cover opacity-50"
+                className="w-full h-full object-cover opacity-65"
               />
           </div>
 
